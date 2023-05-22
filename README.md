@@ -1,2 +1,2 @@
 # CleanArchitectureTraining
-Project for study purpouses
+Project for study purposes
