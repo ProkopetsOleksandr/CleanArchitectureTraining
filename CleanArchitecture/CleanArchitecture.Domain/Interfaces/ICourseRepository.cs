@@ -5,6 +5,6 @@ namespace CleanArchitecture.Domain.Interfaces
 {
     public interface ICourseRepository
     {
-        IReadOnlyCollection<Course> GetCourses();
+        IEnumerable<Course> GetCourses();
     }
 }
