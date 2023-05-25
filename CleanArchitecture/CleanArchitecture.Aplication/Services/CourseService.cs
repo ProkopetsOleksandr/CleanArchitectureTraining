@@ -1,7 +1,6 @@
 ﻿using CleanArchitecture.Aplication.Interfaces;
 using CleanArchitecture.Aplication.ViewModels;
 using CleanArchitecture.Domain.Interfaces;
-using System.Collections.Generic;
 
 namespace CleanArchitecture.Aplication.Services
 {
