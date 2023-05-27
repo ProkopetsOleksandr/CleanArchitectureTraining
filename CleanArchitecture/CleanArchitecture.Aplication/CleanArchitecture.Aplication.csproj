@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Infrastructure.Bus\CleanArchitecture.Infrastructure.Bus.csproj" />
   </ItemGroup>
 
 </Project>
