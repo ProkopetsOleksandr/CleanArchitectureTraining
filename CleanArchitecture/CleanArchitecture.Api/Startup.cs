@@ -41,6 +41,8 @@ namespace CleanArchitecture.Api
 
             services.AddMediatR(typeof(Startup));
 
+
+
             RegisterServices(services);
         }
 
