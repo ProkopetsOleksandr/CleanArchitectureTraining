@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using CleanArchitecture.Aplication.Interfaces;
+using CleanArchitecture.Aplication.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.Api.Controllers
 {
@@ -11,6 +8,19 @@ namespace CleanArchitecture.Api.Controllers
     [Route("[controller]")]
     public class CourseController : ControllerBase
     {
-        
+        private readonly ICourseService _courseService;
+
+        public CourseController(ICourseService courseService)
+        {
+            _courseService = courseService;
+        }
+
+        [HttpPost]
+        public IActionResult Create([FromBody] CourseViewModel model)
+        {
+            _courseService.Create(model);
+
+            return Ok(model);
+        }
     }
 }
